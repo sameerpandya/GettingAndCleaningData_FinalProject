@@ -56,5 +56,5 @@ The **run_analysis.R** script will do the following in order:
 This is a tab separated file, with a header in the first row.
 
 To view this data set as a data frame in R run the following code from your working directory.
-`   tidy_data <- read.table("mean_data_set.txt", header = TRUE) 
+`   tidy_data <- read.table("mean_data_set.txt", header = TRUE) ;
     View(tidy_data)`
