@@ -51,3 +51,10 @@ The **run_analysis.R** script will do the following in order:
 15. An aggregate dataframe is made by grouping the data set by the subject and activity type, and then summarizing on all
     of the features by calculating the mean.
 16. The aggregate dataframe is written out to a file called "*mean_data_set.txt*" which is a tab delimited file.
+
+### Reading mean_data_set.txt
+This is a tab separated file, with a header in the first row.
+
+To view this data set as a data frame in R run the following code from your working directory.
+`   tidy_data <- read.table("mean_data_set.txt", header = TRUE) 
+    View(tidy_data)`

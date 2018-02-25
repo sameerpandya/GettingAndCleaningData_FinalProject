@@ -61,7 +61,7 @@ combined <- rbind(testing, training)
 ordered <- arrange(combined, subject)
 ordered$subject <- as.factor(ordered$subject)
 
-# aggreate data and calculate mean of each feature
+# aggregate data and calculate mean of each feature
 agg <- ordered %>% group_by(subject, activity) %>% summarise_all(funs(mean)) %>% arrange(subject, activity)
 
 # write aggregated data set to a file

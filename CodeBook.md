@@ -10,6 +10,34 @@ a subject and their activity. The columns to the rows include the subject and ac
 There are 30 subjects, with 6 activities each, thus there are 180 rows (181 with the additional header). There are 86 
 variables of which we are concerned, plus subject and activity makes 88 variables in total.
 
+## Steps for creating mean_data_set.txt
+### Run run_analysis.R
+The **run_analysis.R** script will do the following in order:
+1. Download data and unzip data
+  * note: the download and unzip will take place in the working directory.
+2. Check to see if "dplyr" package is installed. If not then the script will download it and load the package.
+3. Activity labels are read from *activity_labels.txt* and a more readable name is applied to the data
+4. Feature labels are read from *features.txt*.
+  * Then, specific features are extracted, namely the features involving a mean or standard deviation.
+  * Specifically grep was used here with the pattern "(mean)|(std)" to pick up only mean and standard deviation of the variables.
+5. Subject labels from the Test group (i.e.: the subjects of the experiment used for testing as opposed to training)
+    are read from *test/subject_test.txt*
+6. Test Activity values are read from *test/y_test.txt*. The values are joined with the Activity Labels data to get the 
+    text values for the Activity (e.g.: "LAYING", "SITTING", etc.)
+7. Test feature values are read from *test/X_test.txt* and only the features from Step 4 are included.
+8. Combine the subject, features, and activity from Test into one data set.
+9. Subject labels from the Training group (i.e.: the subjects of the experiment used for training as opposed to training)
+    are read from *train/subject_train.txt*
+10. Training Activity values are read from *train/y_train.txt*. The values are joined with the Activity Labels data to get the 
+    text values for the Activity (e.g.: "LAYING", "SITTING", etc.)
+11. Training feature values are read from *train/X_train.txt* and only the features from Step 4 are included.
+12. Combine the subject, features, and activity from Training into one data set.
+13. Combine the data sets from Step 11 and 12.
+14. Order the combined data set by subject (i.e.: the first subject's readings are first in the data set)
+15. An aggregate dataframe is made by grouping the data set by the subject and activity type, and then summarizing on all
+    of the features by calculating the mean.
+16. The aggregate dataframe is written out to a file called "*mean_data_set.txt*" which is a tab delimited file.
+
 ## List of variables in mean_data_set.txt
 * "subject" - ID of the subject of the experiment. This is an integer that ranges from [1,30] inclusive. In R it is 
                 useful to cast this to a factor.
