@@ -17,121 +17,146 @@ variables of which we are concerned, plus subject and activity makes 88 variable
                 were taken. This is a string that can be one of the following "LAYING", "SITTING", "STANDING", "WALKING"
                 , "WALKING_DOWNSTAIRS", or "WALKING_UPSTAIRS"
 * "tBodyAcc-mean()-X" - The mean of the mean Time-domain signal for body acceleration in the X direction. This is a numeric 
-                        value within range [-1,1].
+                        value normalized within range [-1,1].
 * "tBodyAcc-mean()-Y" - The mean of the mean Time-domain signal for body acceleration in the Y direction. This is a numeric 
-                        value within range [-1,1].
+                        value normalized within range [-1,1].
 * "tBodyAcc-mean()-Z" - The mean of the mean Time-domain signal for body acceleration in the Z direction. This is a numeric 
-                        value within range [-1,1].                   
+                        value normalized within range [-1,1].                   
 * "tBodyAcc-std()-X"  - The mean of the standard deviation Time-domain signal for body acceleration in the X direction. This is a numeric 
-                        value within range [-1,1].                   
+                        value normalized within range [-1,1].                   
 * "tBodyAcc-std()-Y"  - The mean of the standard deviation Time-domain signal for body acceleration in the Y direction. This is a numeric 
-                        value within range [-1,1].                   
+                        value normalized within range [-1,1].                   
 * "tBodyAcc-std()-Z"  - The mean of the standard deviation Time-domain signal for body acceleration in the Z direction. This is a numeric 
-                        value within range [-1,1].                  
+                        value normalized within range [-1,1].                  
 * "tGravityAcc-mean()-X" - The mean of the mean Time-domain signal for gravitational acceleration in the X direction. This is a numeric 
-                        value within range [-1,1].
+                        value normalized within range [-1,1].
 * "tGravityAcc-mean()-Y" - The mean of the mean Time-domain signal for gravitational acceleration in the Y direction. This is a numeric 
-                        value within range [-1,1].                
+                        value normalized within range [-1,1].                
 * "tGravityAcc-mean()-Z" - The mean of the mean Time-domain signal for gravitational acceleration in the Z direction. This is a numeric 
-                        value within range [-1,1].                
-* "tGravityAcc-std()-X"                 
-* "tGravityAcc-std()-Y"                  
-* "tGravityAcc-std()-Z"                  
-* "tBodyAccJerk-mean()-X"                
-* "tBodyAccJerk-mean()-Y"               
-* "tBodyAccJerk-mean()-Z"                
-* "tBodyAccJerk-std()-X"                
-* "tBodyAccJerk-std()-Y"                 
-* "tBodyAccJerk-std()-Z"                
+                        value normalized within range [-1,1].                
+* "tGravityAcc-std()-X" - The mean of the standard deviation Time-domain signal for gravity acceleration in the X direction. This is a numeric 
+                        value normalized within range [-1,1].                 
+* "tGravityAcc-std()-Y" - The mean of the standard deviation Time-domain signal for gravity acceleration in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].                 
+* "tGravityAcc-std()-Z" - The mean of the standard deviation Time-domain signal for gravity acceleration in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].                 
+* "tBodyAccJerk-mean()-X" - The mean of the mean Time-domain jerk signal for body acceleration  in the X direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyAccJerk-mean()-Y" - The mean of the mean Time-domain jerk signal for body acceleration  in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].              
+* "tBodyAccJerk-mean()-Z" - The mean of the mean Time-domain jerk signal for body acceleration  in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyAccJerk-std()-X" - The mean of the standard deviation Time-domain jerk signal for body acceleration  in the X direction. This is a numeric 
+                        value normalized within range [-1,1].                
+* "tBodyAccJerk-std()-Y" - The mean of the standard deviation Time-domain jerk signal for body acceleration  in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].                
+* "tBodyAccJerk-std()-Z" - The mean of the standard deviation Time-domain jerk signal for body acceleration in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyGyro-mean()-X" - The mean of the mean Time-domain gyroscope signal for body in the X direction. This is a numeric 
+                        value normalized within range [-1,1].                   
+* "tBodyGyro-mean()-Y" - The mean of the mean Time-domain gyroscope signal for body in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].                  
+* "tBodyGyro-mean()-Z" - The mean of the mean dTime-domain gyroscope signal for body in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].                  
+* "tBodyGyro-std()-X" - The mean of the standard deviation Time-domain gyroscope signal for body  in the X direction. This is a numeric 
+                        value normalized within range [-1,1].                  
+* "tBodyGyro-std()-Y" - The mean of the standard deviation Time-domain gyroscope signal for body  in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].                   
+* "tBodyGyro-std()-Z" - The mean of the standard deviation Time-domain gyroscope signal for body  in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].                   
+* "tBodyGyroJerk-mean()-X" - The mean of the mean Time-domain gyroscope jerk signal for body  in the X direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyGyroJerk-mean()-Y" - The mean of the mean Time-domain gyroscope jerk signal for body  in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].             
 
-* "tBodyGyro-mean()-X"                   
-* "tBodyGyro-mean()-Y"                   
-* "tBodyGyro-mean()-Z"                   
-* "tBodyGyro-std()-X"                   
+* "tBodyGyroJerk-mean()-Z" - The mean of the mean Time-domain gyroscope jerk signal for body  in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].              
+* "tBodyGyroJerk-std()-X" - The mean of the standard deviation Time-domain gyroscope jerk signal for body  in the X direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyGyroJerk-std()-Y" - The mean of the standard deviation Time-domain gyroscope jerk signal for body  in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "tBodyGyroJerk-std()-Z" - The mean of the standard deviation Time-domain gyroscope jerk signal for body  in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].              
 
-* "tBodyGyro-std()-Y"                    
-* "tBodyGyro-std()-Z"                    
-* "tBodyGyroJerk-mean()-X"               
-* "tBodyGyroJerk-mean()-Y"              
-
-* "tBodyGyroJerk-mean()-Z"               
-* "tBodyGyroJerk-std()-X"                
-* "tBodyGyroJerk-std()-Y"                
-* "tBodyGyroJerk-std()-Z"               
-
-* "tBodyAccMag-mean()"                   
-* "tBodyAccMag-std()"                    
-* "tGravityAccMag-mean()"                
-* "tGravityAccMag-std()"                
-
-* "tBodyAccJerkMag-mean()"               
-* "tBodyAccJerkMag-std()"                
-* "tBodyGyroMag-mean()"                  
-* "tBodyGyroMag-std()"                  
-
-* "tBodyGyroJerkMag-mean()"              
-* "tBodyGyroJerkMag-std()"               
+* "tBodyAccMag-mean()" - The mean of the mean Time-domain  signal for body acceleration magnitude. This is a numeric 
+                        value normalized within range [-1,1].                  
+* "tBodyAccMag-std()"  - The mean of the mean Time-domain  signal for body acceleration magnitude. This is a numeric 
+                        value normalized within range [-1,1].                 
+* "tGravityAccMag-mean()" - The mean of the mean Time-domain signal for gravity acceleration magnitude. This is a numeric value normalized within range [-1, 1].           
+* "tGravityAccMag-std()" - The mean of the standard deviation Time-domain signal for gravity acceleration magnitude. This is a numeric value normalized within range [-1, 1].               
+* "tBodyAccJerkMag-mean()" - The mean of the mean Time-domain jerk signal for body acceleration magnitude. This is a numeric value normalized within range [-1, 1].              
+* "tBodyAccJerkMag-std()" - The mean of the standard deviation Time-domain jerk signal for body acceleration magnitude. This is a numeric value normalized within range [-1, 1].               
+* "tBodyGyroMag-mean()" - The mean of the mean Time-domain magnitude for body gyroscope signal. This is a numeric value normalized within range [-1, 1]. 
+* "tBodyGyroMag-std()" - The mean of the standard deviation Time-domain magnitude for body gyroscope signal. This is a numeric value normalized within range [-1, 1].                  
+* "tBodyGyroJerkMag-mean()" - The mean of the mean magnitude of the Time-domain gyroscope jerk signal magnitude. This is a numeric value normalized within range [-1, 1].             
+* "tBodyGyroJerkMag-std()" - The mean of the standard deviation magnitude of the Time-domain gyroscope jerk signal magnitude. This is a numeric value normalized within range [-1, 1].              
 * "fBodyAcc-mean()-X" - The mean of the mean Frequency-domain signal for body acceleration in the X direction. This is a numeric 
-                        value within range [-1,1].                   
+                        value normalized within range [-1,1].                   
 * "fBodyAcc-mean()-Y" - The mean of the mean Frequency-domain signal for body acceleration in the Y direction. This is a numeric 
-                        value within range [-1,1].                   
+                        value normalized within range [-1,1].                   
 * "fBodyAcc-mean()-Z" - The mean of the mean Frequency-domain signal for body acceleration in the Z direction. This is a numeric 
-                        value within range [-1,1].                    
+                        value normalized within range [-1,1].                    
 * "fBodyAcc-std()-X" - The mean of the standard deviation Frequency-domain signal for body acceleration in the X direction. This is a numeric 
-                        value within range [-1,1].                    
+                        value normalized within range [-1,1].                    
 * "fBodyAcc-std()-Y" - The mean of the standard deviation Frequency-domain signal for body acceleration in the Y direction. This is a numeric 
-                        value within range [-1,1].                    
+                        value normalized within range [-1,1].                    
 * "fBodyAcc-std()-Z" - The mean of the standard deviation Frequency-domain signal for body acceleration in the Z direction. This is a numeric 
-                        value within range [-1,1].                   
-
-* "fBodyAcc-meanFreq()-X"                
-* "fBodyAcc-meanFreq()-Y"                
-* "fBodyAcc-meanFreq()-Z"                
+                        value normalized within range [-1,1].                   
+* "fBodyAcc-meanFreq()-X" - The mean of the mean frequency Frequency-domain signal for body acceleration in the X direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "fBodyAcc-meanFreq()-Y" - The mean of the mean frequency Frequency-domain signal for body acceleration in the Y direction. This is a numeric 
+                        value normalized within range [-1,1].               
+* "fBodyAcc-meanFreq()-Z" - The mean of the mean frequency Frequency-domain signal for body acceleration in the Z direction. This is a numeric 
+                        value normalized within range [-1,1].
+                
+                
 * "fBodyAccJerk-mean()-X"               
-
 * "fBodyAccJerk-mean()-Y"                
-* "fBodyAccJerk-mean()-Z"                
+* "fBodyAccJerk-mean()-Z"
+                
 * "fBodyAccJerk-std()-X"                 
 * "fBodyAccJerk-std()-Y"                
-
-* "fBodyAccJerk-std()-Z"                 
+* "fBodyAccJerk-std()-Z"
+                 
 * "fBodyAccJerk-meanFreq()-X"            
 * "fBodyAccJerk-meanFreq()-Y"            
 * "fBodyAccJerk-meanFreq()-Z" 
           
 * "fBodyGyro-mean()-X"                   
 * "fBodyGyro-mean()-Y"                   
-* "fBodyGyro-mean()-Z"                   
+* "fBodyGyro-mean()-Z"
+                   
 * "fBodyGyro-std()-X"                   
-
 * "fBodyGyro-std()-Y"                    
-* "fBodyGyro-std()-Z"                    
+* "fBodyGyro-std()-Z"
+                    
 * "fBodyGyro-meanFreq()-X"               
 * "fBodyGyro-meanFreq()-Y"              
-
-* "fBodyGyro-meanFreq()-Z"               
+* "fBodyGyro-meanFreq()-Z"
+               
 * "fBodyAccMag-mean()"                   
 * "fBodyAccMag-std()"                    
 * "fBodyAccMag-meanFreq()"              
 
 * "fBodyBodyAccJerkMag-mean()"           
 * "fBodyBodyAccJerkMag-std()"            
-* "fBodyBodyAccJerkMag-meanFreq()"       
+* "fBodyBodyAccJerkMag-meanFreq()" 
+      
 * "fBodyBodyGyroMag-mean()"             
-
 * "fBodyBodyGyroMag-std()"               
-* "fBodyBodyGyroMag-meanFreq()"          
+* "fBodyBodyGyroMag-meanFreq()"
+          
 * "fBodyBodyGyroJerkMag-mean()"          
 * "fBodyBodyGyroJerkMag-std()"          
 
 * "fBodyBodyGyroJerkMag-meanFreq()"      
-* "angle(tBodyAccMean,gravity)" - Angle between tBodyAccMean and gravity vectors. This is a numeric value in range [-1,1].         
-* "angle(tBodyAccJerkMean),gravityMean)" - Angle between tBodyAccJerkMean and mean gravity vectors. This is a numeric value in range [-1,1]. 
-* "angle(tBodyGyroMean,gravityMean)" - Angle between tBodyGyroMean and mean gravity vectors. This is a numeric value in range [-1,1].   
-* "angle(tBodyGyroJerkMean,gravityMean)" - Angle between tBodyGyroJerkMean and mean gravity vectors. This is a numeric value in range [-1,1].
-* "angle(X,gravityMean)" - Angle between X and mean gravity vectors. This is a numeric value in range [-1,1].                
-* "angle(Y,gravityMean)" - Angle between Y and mean gravity vectors. This is a numeric value in range [-1,1].                
-* "angle(Z,gravityMean)" - Angle between Z and mean gravity vectors. This is a numeric value in range [-1,1].
+* "angle(tBodyAccMean,gravity)" - Angle between tBodyAccMean and gravity vectors. This is a numeric value normalized within range [-1,1].         
+* "angle(tBodyAccJerkMean),gravityMean)" - Angle between tBodyAccJerkMean and mean gravity vectors. This is a numeric value normalized within range [-1,1]. 
+* "angle(tBodyGyroMean,gravityMean)" - Angle between tBodyGyroMean and mean gravity vectors. This is a numeric value normalized within range [-1,1].   
+* "angle(tBodyGyroJerkMean,gravityMean)" - Angle between tBodyGyroJerkMean and mean gravity vectors. This is a numeric value normalized within range [-1,1].
+* "angle(X,gravityMean)" - Angle between X and mean gravity vectors. This is a numeric value normalized within range [-1,1].                
+* "angle(Y,gravityMean)" - Angle between Y and mean gravity vectors. This is a numeric value normalized within range [-1,1].                
+* "angle(Z,gravityMean)" - Angle between Z and mean gravity vectors. This is a numeric value normalized within range [-1,1].
 
 
 
